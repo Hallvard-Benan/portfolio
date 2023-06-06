@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --clr-bg-l1: hsl(220, 82%, 98%);
+
+  --clr-txt-l1: hsl(0, 2%, 91%);
+
+  --clr-bg-gradient: hsla(234, 93%, 11%, 1) hsla(220, 88%, 14%, 1)
+    hsla(220, 76%, 16%, 0);
+
+  --ff-primary: "Poppins", sans-serif;
+  --ff-accent: "Exo", sans-serif;
+
+  --fs-heading-hero-large: 3.2rem;
+  --fs-heading-hero-small: 1.75rem;
+}
