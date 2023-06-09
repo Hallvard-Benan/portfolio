@@ -5,21 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="/javascript/projectnav.js" defer></script>
+    <script src="/javascript/hamburger.js" defer></script>
     <title>Hallvard Benan | Portfolio</title>
     <script
       src="https://kit.fontawesome.com/c4e13e4f8b.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
       <nav class="nav-menu">
-        <ul class="nav-menu__list">
+        <div class="hamburger-menu">
+          <!-- https://codepen.io/Danilo06/pen/PoNNvGm -->
+          <label for="check" class="menu-btn">
+            <input type="checkbox" id="check"/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <ul class="container nav-menu__list ">
           <li class="nav-menu__item">
-            <a href="#projects" class="nav-menu__link">Projects</a>
+            <a href="#projects" class="nav-menu__link"><i class="fa-solid fa-folder-open"></i>Projects </a>
           </li>
           <li class="nav-menu__item">
-            <a href="#about" class="nav-menu__link">About me</a>
+            <a href="#about" class="nav-menu__link"><i class="fa-solid fa-address-card"></i>About me</a>
           </li>
           <li class="nav-menu__item nav-menu__item--contact">
             <a
@@ -47,7 +63,8 @@
       </nav>
     </header>
     <main>
-      <section class="section section--hero">
+
+      <section class="section section--hero" id="hero">
         <div class="hero-content">
           <div class="hero-content__text">
             <h1>
@@ -63,170 +80,241 @@
           </div>
           <div class="hero-content__mockups">
             <div class="hero-content__mockup hero-content__mockup--pc">
-              <img src="/assets/images/beyond-pace-desktop.jpg" alt="" />
+              <img
+                class="laptop"
+                src="/assets/models/laptop-frame.png"
+                alt="laptop displaying images from my projects"
+              />
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/assets/images/beyond-pace-desktop.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/museum-desktop.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/squareeyes-desktop.jpg" alt="" />
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
             </div>
+          
             <div class="hero-content__mockup hero-content__mockup--mobile">
-              <img src="/assets/images/beyond-pace-mobile.jpg" alt="" />
+              <img src="/assets/models/mobile-model.png" alt="" class="mobile">
+               <!-- Slider main container -->
+               <div class="swiper mobile-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/assets/images/beyond-pace-mobile.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/museum-mobile.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/squareeyes-mobile.jpg" alt="" />
+                  </div>
+                  ...
+                </div>
             </div>
           </div>
         </div>
-        <div class="hero-button">
           <div class="hero-button">
             <a href="#projects" class="hero-button__link">See my projects</a>
             <a href="#projects" class="hero-button__link--symbol"
               ><i class="fa-solid fa-chevron-down"></i
             ></a>
           </div>
-        </div>
       </section>
-      <section class="section section--projects" id="projects">
+      <section class="container section section--projects" id="projects">
         <ul class="projects-nav">
-          <a href="#beyondpace">*</a>
-          <a href="#museum">*</a>
-          <a href="#squareeyes">*</a>
+          <a class="nav-home" href="#hero"><span class="visually-hidden">Back to top</span><p class="tooltip">To top</p><i class="fa-solid fa-house"></i></a>
+          <a class="nav-projects" href="#projects"><span class="visually-hidden">Projects</span><p class="tooltip">Projects</p><i class="fa-solid fa-folder-open"></i></a>
+          <a class="nav-about" href="#about"><span class="visually-hidden">About</span><p class="tooltip">About</p><i class="fa-solid fa-address-card"></i></a>
+          <a class="nav-contact" href="#contact"><span class="visually-hidden">contact me</span><p class="tooltip">contact</p><i class="fa-solid fa-message"></i></a>
         </ul>
         <div class="project project--beyond-pace" id="beyondpace">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="" alt="" /></div>
+            <div class="project-img"><img src="/assets/images/beyond-pace-desktop.jpg" alt="beyond pace desktop image" /></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
               >
               <a href="" class="project__link project__link--repo"
-                >Github repo</a
+                >Github repo <i class="fa-brands fa-github"></i
+                  ></a
               >
             </div>
           </div>
           <div class="project__coulumn1">
             <h3 class="project__title">Beyond Pace</h3>
-            <div class="project__text"></div>
+            <div class="project__text">
+              <p>A running blog that was designed and built for my second semester exam at Noroff.</p>
+              <p>The blog posts are all written by Chat GPT, and the content is hosted on Airtable, and is displayed with vanilla HTML, CSS and Javascript</p>
+            </div>
             <div class="project-technologies">
               <div class="project__cms">
                 <h4 class="project-technologies__title">CMS</h4>
                 <div class="project-technologies__logos">
-                  <img
-                    src="/assets/icons/airtable-icon.svg"
-                    alt="airtable icon"
-                  />
-                  <p></p>
+                  <div class="project-technologies__logo">
+                    <img
+                      src="/assets/icons/airtable-icon.svg"
+                      alt="airtable icon"
+                    />
+                    <p>Airtable</p>
+                  </div>
                 </div>
               </div>
               <div class="project__frontend">
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/html-icon.svg" alt="html icon" />
                     <p>HTML</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/css-icon.svg" alt="css icon" />
                     <p>CSS</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img
                       src="/assets/icons/javascript-icon.svg"
                       alt="javascript icon"
                     />
-                    <p>Java Script</p>
+                    <p>JS</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="project project--science-museum" id="museum">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="" alt="" /></div>
+            <div class="project-img"><img src="/assets/images/museum-desktop.jpg" alt="Community science museum image" /></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
               >
               <a href="" class="project__link project__link--repo"
-                >Github repo</a
+                >Github repo <i class="fa-brands fa-github"></i
+                  ></a
               >
             </div>
           </div>
           <div class="project__coulumn1">
             <h3 class="project__title">Community Science Museum</h3>
-            <div class="project__text"></div>
+            <div class="project__text">
+              <p>A running blog that was designed and built for my second semester exam at Noroff.</p>
+              <p>The blog posts are all written by Chat GPT, and the content is hosted on Airtable, and is displayed with vanilla HTML, CSS and Javascript</p>
+            </div>
             <div class="project-technologies">
               <div class="project__cms">
                 <h4 class="project-technologies__title">CMS</h4>
                 <div class="project-technologies__logos">
-                  <img
-                    src="/assets/icons/wordpress-icon.svg"
-                    alt="wordpress icon"
-                  />
-                  <p>Wordpress</p>
+                  <div class="project-technologies__logo">
+                    <img
+                      src="/assets/icons/wordpress-icon.svg"
+                      alt="wordpress icon"
+                    />
+                    <p>Wordpress</p>
+                  </div>
                 </div>
               </div>
               <div class="project__frontend">
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/html-icon.svg" alt="html icon" />
                     <p>HTML</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/css-icon.svg" alt="css icon" />
                     <p>CSS</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img
                       src="/assets/icons/javascript-icon.svg"
                       alt="javascript icon"
                     />
-                    <p>Java Script</p>
+                    <p>JS</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="project project--square-eyes" id="squareeyes">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="" alt="" /></div>
+            <div class="project-img"><img src="/assets/images/squareeyes-desktop.jpg" alt="Community science museum image" /></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
               >
               <a href="" class="project__link project__link--repo"
-                >Github repo</a
+                >Github repo <i class="fa-brands fa-github"></i
+                  ></a
               >
             </div>
           </div>
           <div class="project__coulumn1">
             <h3 class="project__title">Square Eyes</h3>
-            <div class="project__text"></div>
+            <div class="project__text">
+              <p>A running blog that was designed and built for my second semester exam at Noroff.</p>
+              <p>The blog posts are all written by Chat GPT, and the content is hosted on Airtable, and is displayed with vanilla HTML, CSS and Javascript</p>
+            </div>
             <div class="project-technologies">
               <div class="project__cms">
                 <h4 class="project-technologies__title">CMS</h4>
                 <div class="project-technologies__logos">
-                  <img src="" alt="" />
-                  <p></p>
+                  <div class="project-technologies__logo">
+                    <img
+                    
+                    />
+                    <p>TBD</p>
+                  </div>
                 </div>
               </div>
               <div class="project__frontend">
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/html-icon.svg" alt="html icon" />
                     <p>HTML</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img src="/assets/icons/css-icon.svg" alt="css icon" />
                     <p>CSS</p>
                   </div>
-                  <div>
+                  <div class="project-technologies__logo">
                     <img
                       src="/assets/icons/javascript-icon.svg"
                       alt="javascript icon"
                     />
-                    <p>Java Script</p>
+                    <p>JS</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+       
           </div>
         </div>
       </section>
@@ -239,7 +327,7 @@
           </p>
         </div>
       </section>
-      <section class="section section--contact">
+      <section class="section section--contact" id="contact">
         <div class="container">
           <h2>Contact Me</h2>
           <a
@@ -266,6 +354,28 @@
       </section>
     </main>
     <footer></footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module">
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 1,
+        slidesPerView: 1,
+        speed: 800,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1200,
+          disableOnInteraction: false,
+        },
+        observe: true,
+        observeParents: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      console.log("swiping");
+    </script>
   </body>
 </html>

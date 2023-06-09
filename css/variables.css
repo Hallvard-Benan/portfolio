@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap");
 :root {
   --clr-bg-l1: hsl(220, 82%, 98%);
 
@@ -7,9 +7,49 @@
   --clr-bg-gradient: hsla(234, 93%, 11%, 1) hsla(220, 88%, 14%, 1)
     hsla(220, 76%, 16%, 0);
 
+  --clr-accent-500: #041540;
+
   --ff-primary: "Poppins", sans-serif;
   --ff-accent: "Exo", sans-serif;
 
-  --fs-heading-hero-large: 3.2rem;
-  --fs-heading-hero-small: 1.75rem;
+  --fs-heading-hero-large: 2rem;
+  --fs-heading-hero-small: 1.25rem;
+  --fs-heading-card: 1.7rem;
+
+  --padding-mockups: 4rem;
+  --transform-mockups: scale(0.8);
+
+  --gap-hero-content: 2rem;
+  --fs-cta: 1.125rem;
+  --fs-nav: 1.5rem;
+
+  --fw-cta: 600;
+  --fw-hero-s: 400;
+  --fw-hero-l: 700;
+}
+
+@media (min-width: 30em) {
+  :root {
+    --fs-heading-hero-small: 1.5rem;
+    --fs-heading-hero-large: 2.75rem;
+
+    --gap-hero-content: 3rem;
+    --transform-mockups: scale(0.9);
+    --fs-cta: 1.25rem;
+    --fs-heading-card: 2rem;
+  }
+}
+
+@media (min-width: 62.5em) {
+  :root {
+    --fs-heading-hero-small: 1.75rem;
+    --fs-heading-hero-large: 3rem;
+    --fs-cta: 1.5rem;
+    --fs-nav: 1.75rem;
+
+    --gap-hero-content: 6rem;
+
+    --padding-mockups: 0rem;
+    --transform-mockups: scale(1);
+  }
 }
