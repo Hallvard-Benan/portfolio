@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   --clr-bg-l1: hsl(223, 88%, 93%);
   --clr-bg-l2: hsl(223, 88%, 96%);
@@ -22,8 +22,8 @@
   --fs-cta: 1.125rem;
   --fs-nav: 1.5rem;
   --fs-paragraph: 1.125rem;
-  --fs-contact-icons: 2.875rem;
-  --fs-contact-email: 1.45rem;
+  --fs-contact-icons: 1.8rem;
+  --fs-contact-email: 1.15rem;
 
   --padding-mockups: 4rem;
   --transform-mockups: scale(0.8);
@@ -33,6 +33,12 @@
   --fw-cta: 600;
   --fw-hero-s: 400;
   --fw-hero-l: 700;
+  --fw-contact-link: 600;
+}
+@media (max-width: 30em) {
+  :root {
+    /* --fs-contact-email: 1.15rem; */
+  }
 }
 
 @media (min-width: 30em) {
@@ -42,7 +48,7 @@
     --fs-heading-section: 2rem;
     --fs-cta: 1.25rem;
     --fs-heading-card: 2rem;
-    --fs-contact-icons: 3rem;
+    --fs-contact-icons: 2.5rem;
     --fs-contact-email: 1.55rem;
 
     --gap-hero-content: 3rem;

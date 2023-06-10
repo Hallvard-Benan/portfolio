@@ -356,7 +356,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .project__coulumn2 {
   width: 100%;
@@ -380,6 +380,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .project__text {
   display: grid;
   gap: 1rem;
+  padding: 0 0.5rem;
 }
 
 .project-technologies,
@@ -495,13 +496,24 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   gap: 2rem;
 }
 
-.contact__icons {
+.contact-link {
+  border: 1px solid var(--clr-accent-500);
+  border-radius: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--clr-accent-500);
+  color: var(--clr-txt-l1);
+}
+
+.contact-link i {
   font-size: var(--fs-contact-icons);
 }
 
-.contact__email {
+.contact-link h3 {
+  font-weight: var(--fw-contact-link);
   font-size: var(--fs-contact-email);
 }
 
