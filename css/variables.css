@@ -11,6 +11,8 @@
     hsla(220, 76%, 16%, 0);
 
   --clr-accent-500: hsl(223, 88%, 13%);
+  --clr-accent-700: hsl(223, 88%, 21%);
+  --clr-accent-900: hsl(223, 88%, 84%);
 
   --ff-primary: "Poppins", sans-serif;
   --ff-accent: "Exo", sans-serif;
@@ -21,6 +23,7 @@
   --fs-heading-section: 1.5rem;
   --fs-cta: 1.125rem;
   --fs-nav: 1.5rem;
+  --fs-bottom-nav: 1.7rem;
   --fs-paragraph: 1.125rem;
   --fs-contact-icons: 1.8rem;
   --fs-contact-email: 1.15rem;
@@ -35,14 +38,10 @@
   --fw-hero-l: 700;
   --fw-contact-link: 600;
 }
-@media (max-width: 30em) {
-  :root {
-    /* --fs-contact-email: 1.15rem; */
-  }
-}
 
 @media (min-width: 30em) {
   :root {
+    --fs-bottom-nav: 2rem;
     --fs-heading-hero-small: 1.5rem;
     --fs-heading-hero-large: 2.75rem;
     --fs-heading-section: 2rem;

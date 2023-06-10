@@ -48,7 +48,7 @@ p {
 }
 
 .active {
-  color: lightblue;
+  color: var(--clr-accent-900);
 }
 
 /* navigation */
@@ -67,6 +67,14 @@ p {
   height: 45px;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  transition: all 220ms ease-in-out;
+}
+
+.nav-menu__link:hover {
+  background-color: var(--clr-txt-l1);
+  color: var(--clr-accent-500);
 }
 
 /* hamburger menu */
@@ -162,7 +170,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   }
 }
 .tooltip {
-  display: none;
   position: absolute;
   opacity: 0;
   width: 0px;
@@ -265,8 +272,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   position: absolute;
   z-index: 1;
   transform: translateX(31px) translateY(10px);
-  background-color: #051a44;
-  color: aliceblue;
 }
 
 .mobile {
@@ -308,7 +313,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .hero-button:hover .hero-button__link {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--clr-bg-l1);
   color: var(--clr-txt-l1);
   border-radius: 1.4rem;
 }
@@ -414,13 +419,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   border: 1px solid var(--clr-accent-500);
   padding: 0.85rem 1.5rem;
   border-radius: 1rem;
+  transition: all 200ms;
+}
+
+.project__link:hover {
+  background-color: var(--clr-accent-500);
+  color: var(--clr-txt-l1);
 }
 
 .projects-nav {
   display: none;
-  font-size: var(--fs-nav);
+  font-size: var(--fs-bottom-nav);
   color: var(--clr-txt-l1);
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-accent-700);
   border-radius: 1rem;
 }
 
@@ -441,7 +452,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0.5rem 2rem;
+  padding: 1rem 1.65rem;
   gap: 3rem;
   justify-content: space-between;
   z-index: 1;
@@ -506,6 +517,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   gap: 1rem;
   background-color: var(--clr-accent-500);
   color: var(--clr-txt-l1);
+  transition: all 200ms ease-out;
+}
+.contact-link:hover {
+  background-color: var(--clr-bg-l2);
+  color: var(--clr-accent-500);
 }
 
 .contact-link i {
@@ -521,14 +537,20 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 @media (hover: hover) {
   /* navigation */
   .tooltip {
-    display: none;
     color: var(--clr-txt-l1);
+    white-space: nowrap;
   }
   .projects-nav a:hover .tooltip {
     opacity: 1;
     display: flex;
     transform: translateY(-50px);
     width: 300px;
+  }
+}
+
+@media (min-width: 21em) {
+  .projects-nav.stuck {
+    padding: 1rem 2.5rem;
   }
 }
 
