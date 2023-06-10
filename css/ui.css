@@ -506,6 +506,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 /* contact section */
 
+.section--contact {
+  padding-bottom: 10rem;
+}
+
 .contact__links {
   display: grid;
   gap: 2rem;
