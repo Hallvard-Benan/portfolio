@@ -328,7 +328,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   height: 2.85rem;
   padding: 1rem 2rem;
   font-weight: var(--fw-cta);
-
+  filter: drop-shadow(0px 6px 11px hsl(220.06deg 22.94% 59.69% / 76%));
   transition: all 200ms ease-in-out;
 }
 
@@ -407,6 +407,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .project-technologies__logo {
   width: 75px;
+}
+
+.project-technologies__logo p {
+  font-size: 1rem;
 }
 
 .project-links {
