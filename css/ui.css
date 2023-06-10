@@ -193,7 +193,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   align-content: center;
   justify-content: center;
   position: relative;
-  overflow-x: hidden;
 }
 
 .hero-content {
