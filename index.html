@@ -22,7 +22,7 @@
     <header>
       <nav class="nav-menu">
         <div class="hamburger-menu">
-          <!-- https://codepen.io/Danilo06/pen/PoNNvGm -->
+          <!-- animated icon from https://codepen.io/Danilo06/pen/PoNNvGm -->
           <label for="check" class="menu-btn">
             <input type="checkbox" id="check"/>
             <span></span>
@@ -85,11 +85,11 @@
                 src="/assets/models/laptop-frame.png"
                 alt="laptop displaying images from my projects"
               />
-              <!-- Slider main container -->
               <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/assets/images/logo-desktop.jpg" alt="logo" />
+                  </div>
                   <div class="swiper-slide">
                     <img src="/assets/images/beyond-pace-desktop.jpg" alt="" />
                   </div>
@@ -99,27 +99,19 @@
                   <div class="swiper-slide">
                     <img src="/assets/images/squareeyes-desktop.jpg" alt="" />
                   </div>
-                  ...
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
+          
               </div>
             </div>
           
             <div class="hero-content__mockup hero-content__mockup--mobile">
               <img src="/assets/models/mobile-model.png" alt="" class="mobile">
-               <!-- Slider main container -->
                <div class="swiper mobile-swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/assets/images/logo-mobile.jpg" alt="logo" />
+                  </div>
+                  
                   <div class="swiper-slide">
                     <img src="/assets/images/beyond-pace-mobile.jpg" alt="" />
                   </div>
@@ -142,6 +134,7 @@
           </div>
       </section>
       <section class="container section section--projects" id="projects">
+        <h2 class="section__title">Projects</h2>
         <ul class="projects-nav">
           <a class="nav-home" href="#hero"><span class="visually-hidden">Back to top</span><p class="tooltip">To top</p><i class="fa-solid fa-house"></i></a>
           <a class="nav-projects" href="#projects"><span class="visually-hidden">Projects</span><p class="tooltip">Projects</p><i class="fa-solid fa-folder-open"></i></a>
@@ -150,7 +143,7 @@
         </ul>
         <div class="project project--beyond-pace" id="beyondpace">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="/assets/images/beyond-pace-desktop.jpg" alt="beyond pace desktop image" /></div>
+            <div class="project-img"><img src="/assets/images/beyond-pace-desktop.jpg" alt="beyond pace desktop image" loading="lazy"/></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
@@ -175,6 +168,7 @@
                     <img
                       src="/assets/icons/airtable-icon.svg"
                       alt="airtable icon"
+                      loading="lazy"
                     />
                     <p>Airtable</p>
                   </div>
@@ -184,17 +178,18 @@
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/html-icon.svg" alt="html icon" />
+                    <img src="/assets/icons/html-icon.svg" alt="html icon" loading="lazy"/>
                     <p>HTML</p>
                   </div>
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/css-icon.svg" alt="css icon" />
+                    <img src="/assets/icons/css-icon.svg" alt="css icon" loading="lazy"/>
                     <p>CSS</p>
                   </div>
                   <div class="project-technologies__logo">
                     <img
                       src="/assets/icons/javascript-icon.svg"
                       alt="javascript icon"
+                      loading="lazy"
                     />
                     <p>JS</p>
                   </div>
@@ -206,7 +201,7 @@
 
         <div class="project project--science-museum" id="museum">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="/assets/images/museum-desktop.jpg" alt="Community science museum image" /></div>
+            <div class="project-img"><img src="/assets/images/museum-desktop.jpg" alt="Community science museum image" loading="lazy" /></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
@@ -231,6 +226,7 @@
                     <img
                       src="/assets/icons/wordpress-icon.svg"
                       alt="wordpress icon"
+                      loading="lazy"
                     />
                     <p>Wordpress</p>
                   </div>
@@ -240,11 +236,11 @@
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/html-icon.svg" alt="html icon" />
+                    <img src="/assets/icons/html-icon.svg" alt="html icon" loading="lazy" />
                     <p>HTML</p>
                   </div>
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/css-icon.svg" alt="css icon" />
+                    <img src="/assets/icons/css-icon.svg" alt="css icon" loading="lazy"/>
                     <p>CSS</p>
                   </div>
                   <div class="project-technologies__logo">
@@ -262,7 +258,7 @@
 
         <div class="project project--square-eyes" id="squareeyes">
           <div class="project__coulumn2">
-            <div class="project-img"><img src="/assets/images/squareeyes-desktop.jpg" alt="Community science museum image" /></div>
+            <div class="project-img"><img src="/assets/images/squareeyes-desktop.jpg" alt="Community science museum image" loading="lazy"/></div>
             <div class="project-links">
               <a href="" class="project__link project__link--deploy"
                 >Visit site</a
@@ -285,7 +281,7 @@
                 <div class="project-technologies__logos">
                   <div class="project-technologies__logo">
                     <img
-                    
+                    src="/assets/icons/x.svg"
                     />
                     <p>TBD</p>
                   </div>
@@ -295,17 +291,17 @@
                 <h4 class="project-technologies__title">Front end</h4>
                 <div class="project-technologies__logos">
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/html-icon.svg" alt="html icon" />
+                    <img src="/assets/icons/html-icon.svg" alt="html icon" loading="lazy"/>
                     <p>HTML</p>
                   </div>
                   <div class="project-technologies__logo">
-                    <img src="/assets/icons/css-icon.svg" alt="css icon" />
+                    <img src="/assets/icons/css-icon.svg" alt="css icon" loading="lazy"/>
                     <p>CSS</p>
                   </div>
                   <div class="project-technologies__logo">
                     <img
                       src="/assets/icons/javascript-icon.svg"
-                      alt="javascript icon"
+                      alt="javascript icon" loading="lazy"
                     />
                     <p>JS</p>
                   </div>
@@ -319,8 +315,12 @@
         </div>
       </section>
       <section class="section section--about" id="about">
-        <div class="container">
-          <h2>About Me</h2>
+        <div class="container content">
+          <h2 class="section__title">About Me</h2>
+          <p>
+            Hi! My name is Hallvard and I’m a Front End Development student from Oslo, Norway. I am currently studying at
+            Noroff School of Technology and Digital Media.
+          </p>
           <p>
             Hi! My name is Hallvard and I’m a Front End Development student at
             Noroff School of Technology and Digital Media.
@@ -328,27 +328,30 @@
         </div>
       </section>
       <section class="section section--contact" id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <a
-            aria-label="link to my email"
-            href="mailto: hallvard.dev@gmail.com"
-            target="_blank"
-            >hallvard.dev@gmail.com</a
-          >
-          <div>
+        <div class="container content">
+          <h2 class="section__title">Contact Me</h2>
+          <div class="contact__links">
             <a
+            class="contact__email"
+              aria-label="link to my email"
+              href="mailto: hallvard.dev@gmail.com"
               target="_blank"
-              aria-label="link to my github"
-              href="https://github.com/Hallvard-Benan"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              target="_blank"
-              aria-label="link to my linkedin"
-              href="https://www.linkedin.com/in/hallvard-benan-282937249/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+              >hallvard.dev@gmail.com</a
+            >
+            <div class="contact__icons">
+              <a
+                target="_blank"
+                aria-label="link to my github"
+                href="https://github.com/Hallvard-Benan"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                aria-label="link to my linkedin"
+                href="https://www.linkedin.com/in/hallvard-benan-282937249/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>

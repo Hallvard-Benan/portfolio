@@ -4,7 +4,6 @@ const menu = document.querySelector(".nav-menu__list");
 console.log(button);
 
 button.addEventListener("click", (event) => {
-  console.log(event);
   menu.classList.toggle("open");
 });
 

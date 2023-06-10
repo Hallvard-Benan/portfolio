@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap");
 :root {
-  --clr-bg-l1: hsl(220, 82%, 98%);
+  --clr-bg-l1: hsl(223, 88%, 93%);
+  --clr-bg-l2: hsl(223, 88%, 96%);
 
   --clr-txt-l1: hsl(0, 2%, 91%);
+  --clr-txt-d1: hsl(0, 2%, 8%);
+  --clr-txt-d2: hsl(0, 2%, 12%);
 
   --clr-bg-gradient: hsla(234, 93%, 11%, 1) hsla(220, 88%, 14%, 1)
     hsla(220, 76%, 16%, 0);
 
-  --clr-accent-500: #041540;
+  --clr-accent-500: hsl(223, 88%, 13%);
 
   --ff-primary: "Poppins", sans-serif;
   --ff-accent: "Exo", sans-serif;
@@ -15,13 +18,17 @@
   --fs-heading-hero-large: 2rem;
   --fs-heading-hero-small: 1.25rem;
   --fs-heading-card: 1.7rem;
+  --fs-heading-section: 1.5rem;
+  --fs-cta: 1.125rem;
+  --fs-nav: 1.5rem;
+  --fs-paragraph: 1.125rem;
+  --fs-contact-icons: 2.875rem;
+  --fs-contact-email: 1.45rem;
 
   --padding-mockups: 4rem;
   --transform-mockups: scale(0.8);
 
   --gap-hero-content: 2rem;
-  --fs-cta: 1.125rem;
-  --fs-nav: 1.5rem;
 
   --fw-cta: 600;
   --fw-hero-s: 400;
@@ -32,11 +39,14 @@
   :root {
     --fs-heading-hero-small: 1.5rem;
     --fs-heading-hero-large: 2.75rem;
+    --fs-heading-section: 2rem;
+    --fs-cta: 1.25rem;
+    --fs-heading-card: 2rem;
+    --fs-contact-icons: 3rem;
+    --fs-contact-email: 1.55rem;
 
     --gap-hero-content: 3rem;
     --transform-mockups: scale(0.9);
-    --fs-cta: 1.25rem;
-    --fs-heading-card: 2rem;
   }
 }
 
@@ -44,6 +54,11 @@
   :root {
     --fs-heading-hero-small: 1.75rem;
     --fs-heading-hero-large: 3rem;
+    --fs-heading-section: 3rem;
+    --fs-paragraph: 1.25rem;
+    --fs-contact-icons: 3.25rem;
+    --fs-contact-email: 1.75rem;
+
     --fs-cta: 1.5rem;
     --fs-nav: 1.75rem;
 
