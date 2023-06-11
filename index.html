@@ -23,7 +23,7 @@
       <nav class="nav-menu">
         <div class="hamburger-menu">
           <!-- animated icon from https://codepen.io/Danilo06/pen/PoNNvGm -->
-          <label for="check" class="menu-btn">
+          <label for="check" class="menu-btn" role="button" tabindex="0" aria-label="menu button">
             <input type="checkbox" id="check"/>
             <span></span>
             <span></span>
@@ -133,13 +133,13 @@
             ></a>
           </div>
       </section>
-      <section class="container section section--projects" id="projects">
+      <section class="container section--projects" id="projects">
         <h2 class="section__title">Projects</h2>
-        <ul class="projects-nav">
-          <a class="nav-home" href="#hero"><span class="visually-hidden">Back to top</span><p class="tooltip">To top</p><i class="fa-solid fa-house"></i></a>
-          <a class="nav-projects" href="#projects"><span class="visually-hidden">Projects</span><p class="tooltip">Projects</p><i class="fa-solid fa-folder-open"></i></a>
-          <a class="nav-about" href="#about"><span class="visually-hidden">About</span><p class="tooltip">About</p><i class="fa-solid fa-address-card"></i></a>
-          <a class="nav-contact" href="#contact"><span class="visually-hidden">contact me</span><p class="tooltip">contact</p><i class="fa-solid fa-message"></i></a>
+        <ul class="projects-nav" aria-label="section navigation">
+          <a class="nav-home" href="#hero" role="link"><span class="visually-hidden">Back to top</span><p class="tooltip">To top</p><i class="fa-solid fa-house"></i></a>
+          <a class="nav-projects" href="#projects" role="link"><span class="visually-hidden">Projects</span><p class="tooltip">Projects</p><i class="fa-solid fa-folder-open"></i></a>
+          <a class="nav-about" href="#about" role="link"><span class="visually-hidden">About</span><p class="tooltip">About</p><i class="fa-solid fa-address-card"></i></a>
+          <a class="nav-contact" href="#contact" role="link"><span class="visually-hidden">contact me</span><p class="tooltip">contact</p><i class="fa-solid fa-message"></i></a>
         </ul>
         <div class="project project--beyond-pace" id="beyondpace">
           <div class="project__coulumn2">
@@ -282,6 +282,7 @@
                   <div class="project-technologies__logo">
                     <img
                     src="/assets/icons/x.svg"
+                    alt="x"
                     />
                     <p>TBD</p>
                   </div>
