@@ -1,7 +1,11 @@
 const button = document.querySelector("#check");
 const menu = document.querySelector(".nav-menu__list");
 
-console.log(button);
+window.addEventListener("DOMContentLoaded", () => {
+  if (button.checked) {
+    button.checked = false;
+  }
+});
 
 button.addEventListener("click", (event) => {
   menu.classList.toggle("open");
