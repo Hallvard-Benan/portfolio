@@ -15,7 +15,7 @@ const links = document.querySelectorAll(".nav-menu__link");
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    menu.classList.toggle("open");
+    menu.classList.remove("open");
     check.checked = false;
   });
 });
