@@ -443,6 +443,22 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-size: 1rem;
 }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.stack-logos {
+  display: flex;
+  gap: 2rem;
+}
+
+.stack-logo {
+  width: auto;
+}
+
 .project-links {
   display: flex;
   justify-content: space-between;
@@ -487,6 +503,29 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .project__link:hover {
   background-color: var(--clr-accent-500);
   color: var(--clr-txt-l1);
+}
+
+.test-user {
+  width: max-content;
+  margin-inline: auto;
+}
+
+.test-user p {
+  font-size: 14px;
+}
+
+.test-user__label {
+  width: 80px;
+}
+
+.test-user__row {
+  flex: 1, auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  height: 37px;
 }
 
 /* about section */
@@ -594,6 +633,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: space-between;
   }
+
   .project__link {
     padding: 1rem 1.5rem;
     padding-right: 2rem;
@@ -614,6 +654,17 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
   .nav-menu__item--contact {
     flex-direction: column;
+  }
+  .stack-logos {
+    gap: 4rem;
+  }
+  .test-user {
+    margin-inline: 0;
+    margin-block: 1rem;
+  }
+
+  .test-user p {
+    font-size: 16px;
   }
 }
 
